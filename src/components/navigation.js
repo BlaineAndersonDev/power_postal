@@ -1,5 +1,7 @@
+// Required imports.
 import React from "react"
 import { Link } from "gatsby"
+// Component & Styling imports.
 import Style from "./navigation.module.css"
 // Image imports.
 import PPLogo from '../images/pplogo.png';
