@@ -7,7 +7,6 @@ import Style from "./layout.module.css"
 
 export default ({ children }) => (
   <div className={Style.wrapper}>
-    <Navigation />
     {children}
     <Footer />
   </div>

@@ -52,6 +52,7 @@ export default () => (
     <div className={Style.section}>
       <p className={Style.text}>© 2020 Power Postal at Las Sendas</p>
       <p className={Style.text}>Questions? <Button text="Contact Us" link="mailto:info@powerpostal.com"/></p>
+      <p className={Style.textSmall}>Built by <Button text="Blaine Anderson Development" link="http://blaineandersondev.com/"/></p>
     </div>
     
   </div>

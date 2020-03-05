@@ -5,12 +5,11 @@
   align-items: center;
   text-align: center;
   width: 100%;
-  background-color: #666666;
-  color: black;
+  background-color: lightgray;
 }
 .section{
   flex: 1;
-  margin: 10px 20px;
+  margin: 10px 30px;
 }
 .subsection{
   flex: 1;
@@ -19,7 +18,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-top: 30px;
+  margin-top: 10px;
 }
 .title{
   width: 100%; /* Forces the title to have its own line in flexbox. */
@@ -28,20 +27,8 @@
   border-bottom: black 1px solid;
   margin: 0;
 }
-.text{
-  width: 100%;
-  font-size: 1.0em;
-  margin: 0;
-}
-.textSmall{
-  width: 100%;
-  font-size: 0.7em;
-  margin: 10px 0;
-}
-.bold{
-  font-weight: bold;
-}
-.partnerLogo{
-  width: 200px;
-  height: 70px;
+.carrierLogo{
+  width: 150px;
+  height: 150px;
+  cursor: pointer;
 }

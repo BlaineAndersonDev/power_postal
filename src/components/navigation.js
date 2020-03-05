@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 // Component & Styling imports.
 import Style from "./navigation.module.css"
 // Image imports.
-import PPLogo from '../images/pplogo.png';
+import PPLogo from '../images/pp_exterior.png';
 
 export default () => (
   <div className={Style.wrapper}>

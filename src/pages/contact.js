@@ -2,11 +2,6 @@
 import React from "react";
 // Component & Styling imports.
 import Style from "./contact.module.css";
-// Image imports.
-import PPExterior from '../images/pp_exterior.png';
-
-let googleURL = `https://www.google.com/maps/embed/v1/place?q=Skyward+Therapies+LLC,+6239+E+Brown+Rd+Suite+112+Room+7,+Mesa,+AZ+85205&key=AIzaSyAGSdpZesorTJprfCK8IgLV-go95aXnaTU`
-
 
 export default () => (
   <div className={Style.wrapper}>
