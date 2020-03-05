@@ -35,6 +35,17 @@
 .bold{
   font-weight: bold;
 }
+.subtleButton{
+  display: inline-block;
+  border-radius: 4px;
+  background-color: none;
+  border: none;
+  color: black;
+  text-align: center;
+  transition: all 0.2s;
+  cursor: pointer;
+  text-decoration: none;
+}
 .mapContainer{
   flex: 1;
   width: 100%;

@@ -45,7 +45,7 @@ export default () => (
         <p className={Style.text}>Suite 113 Mesa, AZ 85215</p>
         <p className={Style.text}><span className={Style.bold}>Phone: </span>480-654-2600</p>
         <p className={Style.text}><span className={Style.bold}>Fax: </span>480-654-2800</p>
-        <p className={Style.text}><span className={Style.bold}>Email: </span>Info@PowerPostal.com</p>
+        <p className={Style.text}><span className={Style.bold}>Email: </span><a href="mailto:info@powerpostal.com" className={Style.subtleButton}>Info@PowerPostal.com</a></p>
       </div>
 
     </div>

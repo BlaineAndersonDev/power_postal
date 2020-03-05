@@ -3,6 +3,7 @@ import React from "react"
 import { Link } from "gatsby"
 // Component & Styling imports.
 import Style from "./footer.module.css"
+import Button from "./button.js"
 // Image imports.
 import PartnerEgghead from '../images/partner_egghead.png';
 import PartnerMilano from '../images/partner_milano.png';
@@ -19,8 +20,7 @@ export default () => (
         <p className={Style.text}>Suite 113 Mesa, AZ 85215</p>
         <p className={Style.text}><span className={Style.bold}>Phone: </span>480-654-2600</p>
         <p className={Style.text}><span className={Style.bold}>Fax: </span>480-654-2800</p>
-        <p className={Style.text}><span className={Style.bold}>Email: </span>Info@PowerPostal.com</p>
-        <p className={Style.text}><a href="https://www.google.com/maps/place/Power+Postal+at+Las+Sendas,+2824+N+Power+Rd+%23113,+Mesa,+AZ+85215/@33.466985,-111.685576,16z/data=!4m2!3m1!1s0x872ba5238ac70ab7:0x575496cc1e835641?hl=en-US&gl=US" target="_blank">Get Directions</a></p>
+        <Button text="Get Directions" link="https://www.google.com/maps/place/Power+Postal+at+Las+Sendas,+2824+N+Power+Rd+%23113,+Mesa,+AZ+85215/@33.466985,-111.685576,16z/data=!4m2!3m1!1s0x872ba5238ac70ab7:0x575496cc1e835641?hl=en-US&gl=US"/>
       </div>
     </div>
 
@@ -51,7 +51,7 @@ export default () => (
 
     <div className={Style.section}>
       <p className={Style.text}>© 2020 Power Postal at Las Sendas</p>
-      <p className={Style.text}>Questions? <a href="mailto:info@powerpostal.com">Contact Us</a></p>
+      <p className={Style.text}>Questions? <Button text="Contact Us" link="mailto:info@powerpostal.com"/></p>
     </div>
     
   </div>
