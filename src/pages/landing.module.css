@@ -1,0 +1,30 @@
+.wrapper{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+.imageUnderlay{
+  width: 100%;
+  height: auto;
+  z-index: 0;
+}
+/* Positioned 'absolute' to center the text on the image.  */
+.textOverlay{
+  width: 100%;
+  z-index: 1;
+  margin: 0 auto;
+  position: absolute;
+  color: white;
+  text-shadow: 1px 1px 2px black; 
+}
+  .title{
+    font-size: 2.0em;
+    font-family: 'Pacifico', cursive, 'Caladea', serif;
+  }
+  .subtitle{
+    font-size: 1.00em;
+  }
+@media only screen and (max-width: 480px) {};

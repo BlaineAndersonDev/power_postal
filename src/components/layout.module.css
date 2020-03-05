@@ -1,0 +1,17 @@
+html, body{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: lightblue;
+  font-family: 'Caladea', serif;;
+}
+.wrapper{
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
