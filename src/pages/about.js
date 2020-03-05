@@ -18,9 +18,5 @@ export default () => (
         className={Style.imageUnderlay}
         alt="LandingImage" />
     </div>
-
-
-
-
   </div>
 );

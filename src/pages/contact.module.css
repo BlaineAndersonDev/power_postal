@@ -1,0 +1,48 @@
+.wrapper{
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  background-color: lightgray;
+}
+.section{
+  flex: 1;
+  margin: 10px 30px;
+}
+.subsection{
+  flex: 1;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 30px;
+}
+.title{
+  width: 100%; /* Forces the title to have its own line in flexbox. */
+  font-size: 1.25em;
+  font-family: 'Caladea', serif;
+  border-bottom: black 1px solid;
+  margin: 0;
+}
+.text{
+  width: 100%;
+  font-size: 1.0em;
+  margin: 0;
+}
+.bold{
+  font-weight: bold;
+}
+.mapContainer{
+  flex: 1;
+  width: 100%;
+  height: 300px;
+}
+.map{
+  margin: 20px 0; 
+  border: 1px black solid;
+  width: 100%;
+  height: 100%;
+}

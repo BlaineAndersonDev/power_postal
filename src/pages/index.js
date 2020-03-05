@@ -4,11 +4,13 @@ import React from "react"
 import Layout from "../components/layout"
 import Landing from "./landing.js"
 import About from "./about.js"
+import Contact from "./contact.js"
 
 const IndexPage = () => (
   <Layout>
     <Landing />
     <About />
+    <Contact />
   </Layout>
 )
 
