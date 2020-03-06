@@ -34,7 +34,7 @@
       "clean": "gatsby clean",
       "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
       "generate": "gatsby build && gatsby serve",
-      "cloud": "npm install -g gatsby-cli && gatsby develop"
+      "cloud": "gatsby develop"
   },
   "repository": {
     "type": "git",
