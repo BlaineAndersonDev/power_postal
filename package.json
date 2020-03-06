@@ -33,7 +33,7 @@
       "serve": "gatsby serve",
       "clean": "gatsby clean",
       "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-      "cloudfirst": "git pull origin master && npm install && npm install -g gatsby-cli && sudo npm install pm2 -g && pm2 startup systemd && gatsby build && gatsby serve",
+      "cloudfirst": "git pull origin master && npm install && npm install -g gatsby-cli && sudo npm install pm2 -g && pm2 startup systemd && npm cloud",
       "cloud": "gatsby build && gatsby serve"
   },
   "repository": {
