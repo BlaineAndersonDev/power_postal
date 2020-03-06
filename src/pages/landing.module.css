@@ -27,4 +27,12 @@
   .subtitle{
     font-size: 1.00em;
   }
-@media only screen and (max-width: 375px) {};
+
+@media only screen and (min-width: 425px) {
+  .title{
+    font-size: 3.0em;
+  }
+  .subtitle{
+    font-size: 1.25em;
+  }
+};
