@@ -14,7 +14,7 @@
 .subsection{
   flex: 1;
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column wrap;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -32,3 +32,16 @@
   height: 150px;
   cursor: pointer;
 }
+@media only screen and (min-width: 375px) {
+  .section{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .subsection{
+    flex: 1 1 calc(40% - 20px);
+    margin: 2px;
+  }
+};
