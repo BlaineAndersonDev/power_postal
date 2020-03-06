@@ -49,7 +49,7 @@ export default () => (
         className={Style.map} 
         frameborder="0"
         src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJtwrHiiOlK4cRQVaDHsyWVFc&key=AIzaSyAGSdpZesorTJprfCK8IgLV-go95aXnaTU" 
-        allowfullscreen />
+        allowfullscreen title="Map" />
     </div>
   </div>
 );

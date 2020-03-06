@@ -6,6 +6,7 @@ import Landing from "./landing.js"
 import About from "./about.js"
 import Contact from "./contact.js"
 import Tracking from "./tracking.js"
+import Footer from "./footer.js"
 
 const IndexPage = () => (
   <Layout>
@@ -13,6 +14,7 @@ const IndexPage = () => (
     <About />
     <Contact />
     <Tracking />
+    <Footer />
   </Layout>
 )
 

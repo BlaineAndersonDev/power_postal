@@ -4,5 +4,5 @@ import React from "react"
 import Style from "./button.module.css";
 
 export default (props) => (
-  <a href={props.link} target="_blank" className={Style.button}><span>{props.text} </span></a>
+  <a href={props.link} target="_blank" rel="noopener noreferrer" className={Style.button}><span>{props.text} </span></a>
 )

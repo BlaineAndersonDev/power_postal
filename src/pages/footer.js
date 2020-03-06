@@ -1,9 +1,8 @@
 // Required imports.
 import React from "react"
-import { Link } from "gatsby"
 // Component & Styling imports.
 import Style from "./footer.module.css"
-import Button from "./button.js"
+import Button from "../components/button.js"
 // Image imports.
 import PartnerEgghead from '../images/partner_egghead.png';
 import PartnerMilano from '../images/partner_milano.png';
@@ -26,21 +25,21 @@ export default () => (
 
     <div className={Style.section}>
       <p className={Style.title}>Proudly Partnered With:</p>
-      <a href="https://www.leanintree.com/home.aspx" target="_blank">
+      <a href="https://www.leanintree.com/home.aspx" target="_blank" rel="noopener noreferrer">
         <img 
           src={PartnerLeaninTree}
           className={Style.partnerLogo}
           alt="LeaninTree" 
         />
       </a>
-      <a href="https://eggheadcomputerservices.com/home" target="_blank">
+      <a href="https://eggheadcomputerservices.com/home" target="_blank" rel="noopener noreferrer">
         <img 
           src={PartnerEgghead}
           className={Style.partnerLogo}
           alt="Egghead" 
         />
       </a>
-      <a href="http://milanomusic.com/" target="_blank">
+      <a href="http://milanomusic.com/" target="_blank" rel="noopener noreferrer">
         <img 
           src={PartnerMilano}
           className={Style.partnerLogo}
