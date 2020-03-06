@@ -12,6 +12,7 @@ export default () => (
   <div className={Style.wrapper}>
     <div className={Style.section}>
       <h1 className={Style.title}>Track Your Package</h1>
+      <p className={Style.text}>Need up-to-date tracking information for your package? We’ll find out where it is and when it's going to be delivered.</p>
       <div className={Style.subsection}>
         <a href="https://tools.usps.com/go/TrackConfirmAction_input">
         <img 

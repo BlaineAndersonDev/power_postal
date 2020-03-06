@@ -45,3 +45,14 @@
   width: 200px;
   height: 60px;
 }
+.subtleButton{
+  display: inline-block;
+  border-radius: 4px;
+  background-color: none;
+  border: none;
+  color: black;
+  text-align: center;
+  transition: all 0.2s;
+  cursor: pointer;
+  text-decoration: none;
+}

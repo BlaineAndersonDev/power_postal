@@ -26,7 +26,7 @@ export default () => (
 
     <div className={Style.section}>
       <p className={Style.title}>Proudly Partnered With:</p>
-      <a href="https://eggheadcomputerservices.com/home" target="_blank">
+      <a href="https://www.leanintree.com/home.aspx" target="_blank">
         <img 
           src={PartnerLeaninTree}
           className={Style.partnerLogo}
@@ -40,7 +40,7 @@ export default () => (
           alt="Egghead" 
         />
       </a>
-      <a href="https://eggheadcomputerservices.com/home" target="_blank">
+      <a href="http://milanomusic.com/" target="_blank">
         <img 
           src={PartnerMilano}
           className={Style.partnerLogo}
@@ -52,7 +52,7 @@ export default () => (
     <div className={Style.section}>
       <p className={Style.text}>© 2020 Power Postal at Las Sendas</p>
       <p className={Style.text}>Questions? <Button text="Contact Us" link="mailto:info@powerpostal.com"/></p>
-      <p className={Style.textSmall}>Built by <Button text="Blaine Anderson Development LLC" link="http://blaineandersondev.com/"/></p>
+      <p className={Style.textSmall}>Built by <a href="http://blaineandersondev.com/" className={Style.subtleButton}>Blaine Anderson Development LLC</a></p>
     </div>
     
   </div>
