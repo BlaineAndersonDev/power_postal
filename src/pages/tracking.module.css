@@ -10,6 +10,11 @@
 .section{
   flex: 1;
   margin: 10px 30px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 .subsection{
   flex: 1;
@@ -27,19 +32,24 @@
   border-bottom: black 1px solid;
   margin: 0;
 }
+.text{
+  width: 100%; /* Forces the title to have its own line in flexbox. */
+  font-size: 1.10em;
+  margin: 0;
+  margin-bottom: 10px;
+}
 .carrierLogo{
   width: 150px;
   height: 150px;
   cursor: pointer;
 }
-@media only screen and (min-width: 375px) {
-  .section{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+@media only screen and (min-width: 700px) {
+  .subsection{
+    flex: 1 1 calc(25% - 20px);
+    margin: 2px;
   }
+};
+@media only screen and (min-width: 375px) {
   .subsection{
     flex: 1 1 calc(40% - 20px);
     margin: 2px;

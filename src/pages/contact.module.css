@@ -56,3 +56,22 @@
   width: 100%;
   height: 100%;
 }
+@media only screen and (min-width: 700px) {
+  .section{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: baseline;
+    align-items: baseline;
+    text-align: center;
+  }
+  .subsection{
+    flex: 1 1 calc(40% - 20px);
+    margin: 2px;
+  }
+  .title{
+    font-size: 2.0em;
+  }
+  .text{
+    font-size: 1.10em;
+  }
+};
