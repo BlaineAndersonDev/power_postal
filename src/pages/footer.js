@@ -11,7 +11,7 @@ import PartnerLeaninTree from '../images/partner_leanin_tree.png';
 export default () => (
   <div className={Style.wrapper}>
 
-    <div className={Style.section}>
+    <div id={Style.locationBox} className={Style.section}>
       <div className={Style.subsection}>
         <p className={Style.title}>Location</p>
         <p className={Style.text}><span className={Style.bold}>Power Postal At Las Sendas</span></p>
@@ -23,7 +23,7 @@ export default () => (
       </div>
     </div>
 
-    <div className={Style.section}>
+    <div id={Style.partnerBox} className={Style.section}>
       <p className={Style.title}>Proudly Partnered With:</p>
       <a href="https://www.leanintree.com/home.aspx" target="_blank" rel="noopener noreferrer">
         <img 

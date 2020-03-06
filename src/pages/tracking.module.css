@@ -43,15 +43,38 @@
   height: 150px;
   cursor: pointer;
 }
-@media only screen and (min-width: 700px) {
-  .subsection{
-    flex: 1 1 calc(25% - 20px);
-    margin: 2px;
-  }
-};
 @media only screen and (min-width: 375px) {
   .subsection{
     flex: 1 1 calc(40% - 20px);
     margin: 2px;
   }
-};
+}
+@media only screen and (min-width: 425px) {
+  .wrapper{
+    padding: 20px 0;
+  }
+}
+@media only screen and (min-width: 700px) {
+  .subsection{
+    flex: 1 1 calc(25% - 20px);
+    margin: 2px;
+  }
+}
+@media only screen and (min-width: 1020px) {
+  .section{
+    margin: 0 100px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .title{
+    font-size: 1.85em;
+  }
+  .text{
+    font-size: 1.10em;
+  }
+  .carrierLogo{
+    width: 225px;
+    height: 225px;
+    cursor: pointer;
+  }
+}

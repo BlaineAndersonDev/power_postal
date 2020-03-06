@@ -19,7 +19,6 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-top: 30px;
 }
 .title{
   width: 100%; /* Forces the title to have its own line in flexbox. */
@@ -56,6 +55,11 @@
   cursor: pointer;
   text-decoration: none;
 }
+@media only screen and (min-width: 425px) {
+  .wrapper{
+    padding-top: 20px;
+  }
+}
 @media only screen and (min-width: 700px) {
   .wrapper{
     display: flex;
@@ -82,4 +86,40 @@
   .textSmall{
     min-width: 100%;
   }
-};
+  .partnerLogo{
+    width: 250px;
+    height: 75px;
+  }
+}
+@media only screen and (min-width: 1020px) {
+  .subsection{
+    margin: 10px 60px;
+  }
+  .partnerLogo{
+    width: 175px;
+    height: 75px;
+    margin: 5px 15px;
+  }
+  #locationBox{
+    flex: 1;
+  }
+  #partnerBox{
+    flex: 2;
+  }
+}
+@media only screen and (min-width: 1020px) {
+  .partnerLogo{
+    width: 225px;
+    height: 100px;
+    margin: 5px 35px;
+  }
+  .title{
+    font-size: 1.85em;
+  }
+  .text{
+    font-size: 1.10em;
+  }
+  .textSmall{
+    font-size: 1.0em;
+  }
+}
