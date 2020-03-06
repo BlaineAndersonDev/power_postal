@@ -67,3 +67,8 @@ yarn-error.log
 .pnp.js
 # Yarn Integrity file
 .yarn-integrity
+
+# SSH Key Files
+power_postal
+power_postal_secrets
+power_postal.pub
