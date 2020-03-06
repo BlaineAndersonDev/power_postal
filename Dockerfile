@@ -1,19 +1,20 @@
-FROM node:alpine
+# Use the official image as a parent image
+FROM node:current-slim
 
-# Also exposing VSCode debug ports
-EXPOSE 8000 9929 9230
+# Set the working directory
+WORKDIR /usr/src/app
 
-RUN \
-  apk add --no-cache python make g++ && \
-  apk add vips-dev fftw-dev --update-cache \
-  --repository http://dl-3.alpinelinux.org/alpine/edge/community \
-  --repository http://dl-3.alpinelinux.org/alpine/edge/main \
-  && rm -fR /var/cache/apk/*
+# Copy the file from your host to your current location
+COPY package.json .
 
-RUN npm install -g gatsby-cli
+# Run the command inside your image filesystem
+RUN npm install
 
-WORKDIR /app
-COPY ./package.json .
-RUN npm install && npm cache clean
+# Inform Docker that the container is listening on the specified port at runtime.
+EXPOSE 8080
+
+# Run the specified command within the container.
+CMD [ "npm", "cloud" ]
+
+# Copy the rest of your app's source code from your host to your image filesystem.
 COPY . .
-CMD ["npm", "develop", "-H", "0.0.0.0" ]
