@@ -41,7 +41,12 @@
 .carrierLogo{
   width: 150px;
   height: 150px;
+  border: 2px solid transparent;
   cursor: pointer;
+  transition: ease 0.5s;
+}.carrierLogo:hover, .carrierLogo:focus{
+  border: 2px solid black;
+  filter: brightness(200%);
 }
 @media only screen and (min-width: 375px) {
   .subsection{
