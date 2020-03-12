@@ -29,12 +29,12 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
-      "start": "npm run develop",
-      "serve": "gatsby serve",
-      "clean": "gatsby clean",
-      "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-      "cloudfirst": "git pull origin master && npm install && npm install -g gatsby-cli && sudo npm install pm2 -g && pm2 startup systemd && npm cloud",
-      "cloud": "gatsby build && gatsby serve"
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "cloudfirst": "git pull origin master && npm install && npm install -g gatsby-cli && sudo npm install pm2 -g && pm2 startup systemd && npm cloud",
+    "cloud": "gatsby build && gatsby serve"
   },
   "repository": {
     "type": "git",
