@@ -2,12 +2,18 @@
 import React from "react";
 // Component & Styling imports.
 import Style from "./contact.module.css";
+// Image imports.
+import iconHours from '../images/icon_hours.svg';
+import iconHolidays from '../images/icon_holidays.svg';
+import iconCarriers from '../images/icon_carriers.svg';
+import iconLocation from '../images/icon_location.svg';
 
 export default () => (
   <div className={Style.wrapper}>
     <div className={Style.section}>
 
       <div className={Style.subsection}>
+        <img src={iconHours} alt="icon" className={Style.icon} />
         <p className={Style.title}>Hours</p>
         <p className={Style.text}><span className={Style.bold}>Mon-Fri:</span> 8:30AM - 6:00PM</p>
         <p className={Style.text}><span className={Style.bold}>Sat:</span> 9:30AM - 4:00PM</p>
@@ -15,6 +21,7 @@ export default () => (
       </div>
 
       <div className={Style.subsection}>
+        <img src={iconHolidays} alt="icon" className={Style.icon} />
         <p className={Style.title}>Holiday Hours</p>
         <p className={Style.text}><span className={Style.bold}>Thanksgiving:</span> Closed</p>
         <p className={Style.text}><span className={Style.bold}>Black Friday:</span> Closed</p>
@@ -25,6 +32,7 @@ export default () => (
       </div>
 
       <div className={Style.subsection}>
+        <img src={iconCarriers} alt="icon" className={Style.icon} />
         <p className={Style.title}>Carrier Pickup Times</p>
         <p className={Style.text}><span className={Style.bold}>FedEx Ground:</span> 4:00PM</p>
         <p className={Style.text}><span className={Style.bold}>FedEx Express:</span> 5:00PM</p>
@@ -34,6 +42,7 @@ export default () => (
       </div>
 
       <div className={Style.subsection}>
+        <img src={iconLocation} alt="icon" className={Style.icon} />
         <p className={Style.title}>Location</p>
         <p className={Style.text}><span className={Style.bold}>Power Postal At Las Sendas</span></p>
         <p className={Style.text}>2824 N Power Rd</p>

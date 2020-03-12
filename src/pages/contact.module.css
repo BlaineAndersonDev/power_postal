@@ -20,6 +20,10 @@
   text-align: center;
   margin-bottom: 30px;
 }
+.icon{
+  width: 0px;
+  height: 0px;
+}
 .title{
   width: 100%; /* Forces the title to have its own line in flexbox. */
   font-size: 1.25em;
@@ -71,7 +75,11 @@
   }
   .subsection{
     flex: 1 1 calc(40% - 20px);
-    margin: 2px;
+    margin: 20px 2px 2px 2px;
+  }
+  .icon{
+    width: 100px;
+    height: 100px;
   }
   .title{
     font-size: 2.0em;
@@ -83,7 +91,7 @@
 @media only screen and (min-width: 1020px) {
   .subsection{
     flex: 1 1 calc(40% - 20px);
-    margin: 0 50px;
+    margin: 20px 50px 2px 50px;
   }
   .mapContainer{
     flex: 1;
