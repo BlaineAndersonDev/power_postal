@@ -1,0 +1,15 @@
+{
+    "master": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-powerpostal-master-95646-authRole",
+            "UnauthRoleArn": "arn:aws:iam::897736104597:role/amplify-powerpostal-master-95646-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::897736104597:role/amplify-powerpostal-master-95646-authRole",
+            "Region": "us-west-2",
+            "DeploymentBucketName": "amplify-powerpostal-master-95646-deployment",
+            "UnauthRoleName": "amplify-powerpostal-master-95646-unauthRole",
+            "StackName": "amplify-powerpostal-master-95646",
+            "StackId": "arn:aws:cloudformation:us-west-2:897736104597:stack/amplify-powerpostal-master-95646/76499000-6482-11ea-89b6-0251676acdfa",
+            "AmplifyAppId": "d1yqmwdpvzn715"
+        }
+    }
+}
