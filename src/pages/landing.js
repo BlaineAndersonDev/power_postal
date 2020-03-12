@@ -3,7 +3,7 @@ import React from "react";
 // Component & Styling imports.
 import Style from "./landing.module.css";
 // Image imports.
-import UspsTruck from '../images/postal_truck.jpg';
+import UspsTruck from '../images/postal_truck_large.jpg';
 
 export default () => (
   <div className={Style.wrapper}>
