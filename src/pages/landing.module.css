@@ -5,11 +5,8 @@
   align-items: center;
   text-align: center;
   width: 100%;
-}
-.imageUnderlay{
-  width: 100%;
-  height: auto;
-  z-index: 0;
+  height: 400px;
+  background: url("../images/postal_truck_large.jpg") center/cover no-repeat scroll border-box border-box white;
 }
 /* Positioned 'absolute' to center the text on the image.  */
 .textOverlay{
@@ -28,6 +25,9 @@
     font-size: 1.00em;
   }
 @media only screen and (min-width: 425px) {
+  .wrapper{
+    height: 450px;
+  }
   .title{
     font-size: 3.0em;
   }
@@ -36,6 +36,9 @@
   }
 }
 @media only screen and (min-width: 700px) {
+  .wrapper{
+    height: 550px;
+  }
   .title{
     font-size: 5.0em;
   }
@@ -44,6 +47,9 @@
   }
 }
 @media only screen and (min-width: 1020px) {
+  .wrapper{
+    height: 650px;
+  }
   .textOverlay{
     text-shadow: 2px 2px 3px black; 
   }
@@ -55,6 +61,9 @@
   }
 }
 @media only screen and (min-width: 1440px) {
+  .wrapper{
+    height: 850px;
+  }
   .imageUnderlay{
     max-width: 100%;
     max-height: 900px;
