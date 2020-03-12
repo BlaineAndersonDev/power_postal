@@ -6,6 +6,7 @@
   text-align: center;
   width: 100%;
   height: 400px;
+  /* background: url("../images/pp01.jpg") center/cover no-repeat scroll border-box border-box white; */
   background: url("../images/postal_truck_large.jpg") center/cover no-repeat scroll border-box border-box white;
 }
 /* Positioned 'absolute' to center the text on the image.  */

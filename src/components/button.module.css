@@ -2,7 +2,7 @@
 .button {
   display: inline-block;
   border-radius: 4px;
-  background-color: gray;
+  background-color: lightgray;
   border: 1px solid black;
   color: black;
   text-align: center;
