@@ -21,13 +21,9 @@
     display: none;
   }
   .section{
+    flex: 1;
     width: 100%;
     text-shadow: 1px 1px #ffffff62;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
   }
   .title{
     font-size: 2.25em;
@@ -37,23 +33,12 @@
     width: 90%;
     font-size: 1.08em;
   }
-  .subSection{
-  }
-  .icon{
-    width: 100px;
-    height: 100px;
-  }
   .subTitle{
     font-size: 1.25em;
-    color: darkred;
-    text-align: left;
-    margin: 20px 10% 0 10%; 
   }
   .subText{
     font-size: 1.0em;
     list-style-type: none;
-    text-align: left;
-    margin: 20px 10% 0 10%; 
   }
   .imageUnderlay{
     width: 100%;
