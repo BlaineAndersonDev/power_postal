@@ -1,59 +1,79 @@
 .wrapper{
+    width: 100%;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 100%;
     background-color: whitesmoke;
-    background: url("../images/services03.jpg") center/cover no-repeat scroll border-box border-box white;
-    position: relative;
-    z-index: 9;
-  }
-  #overlay{
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -10;
-  }
-  #imageContainer{
-    display: none;
+    padding-bottom: 20px;
   }
   .section{
-    width: 100%;
-    text-shadow: 1px 1px #ffffff62;
+    flex: 1;
+    margin: 0 15px;
+  }
+  .subSection{
+    flex: 1;
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: center;
     align-items: center;
     text-align: center;
   }
-  .title{
-    font-size: 2.25em;
-    width: 90%;
-  }
+  /* These specific settings allow a line on either side of the title */
+    #title {
+      width: 80%;
+      overflow: hidden;
+      text-align: center;
+    }
+    #title:before,
+    #title:after {
+        background-color: #000;
+        content: "";
+        display: inline-block;
+        height: 1px;
+        position: relative;
+        vertical-align: middle;
+        width: 50%;
+    }
+    #title:before {
+        right: 0.5em;
+        margin-left: -50%;
+    }
+    #title:after {
+        left: 0.5em;
+        margin-right: -50%;
+    }  
   .text{
     width: 90%;
     font-size: 1.08em;
   }
-  .subSection{
-  }
-  .icon{
-    width: 100px;
-    height: 100px;
+  .icon{ /* Prevents the icon from showing on smaller devices */
+    width: 0;
+    height: 0;
   }
   .subTitle{
     font-size: 1.25em;
     color: darkred;
     text-align: left;
-    margin: 20px 10% 0 10%; 
+    margin: 0 0 10px 0; 
+    width: 100%;
   }
   .subText{
-    font-size: 1.0em;
+    font-size: 1.15em;
     list-style-type: none;
     text-align: left;
-    margin: 20px 10% 0 10%; 
+    margin: 0 10% 0 10%; 
+  }
+  .listContainer{
+    margin: 0 0 0 0; 
+    text-align: left;
+    width: 100%;
+  }
+  .listItem{
+    font-size: 1.15em;
+    list-style-type: circle;
+    text-align: left;
   }
   .imageUnderlay{
     width: 100%;
@@ -61,7 +81,7 @@
     z-index: 0;
     border-radius: 50%;
   }
-  @media only screen and (min-width: 320px) {
+  /* @media only screen and (min-width: 320px) {
     .imageUnderlay{
       width: 45%;
       height: auto;
@@ -77,9 +97,6 @@
   @media only screen and (min-width: 700px) {
     .wrapper{
       flex-flow: row wrap;
-    }
-    .title{
-      font-size: 2.0em;
     }
     .text{
       font-size: 1.10em;
@@ -130,10 +147,7 @@
     .textOverlay{
       text-shadow: 3px 3px 5px black; 
     }
-    .title{
-      font-size: 3.0em;
-    }
     .subtitle{
       font-size: 2.0em;
     }
-  }
+  } */
