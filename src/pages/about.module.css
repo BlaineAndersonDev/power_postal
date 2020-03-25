@@ -1,6 +1,6 @@
 .wrapper{
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -17,19 +17,7 @@
 .text{
   font-size: 1.10em;
 }
-.imageUnderlay{
-  width: 100%;
-  height: auto;
-  z-index: 0;
-  border-radius: 50%;
-}
 @media only screen and (min-width: 320px) {
-  .imageUnderlay{
-    width: 75%;
-    height: auto;
-    z-index: 0;
-    border-radius: 50%;
-  }
 }
 @media only screen and (min-width: 425px) {
   .wrapper{
@@ -43,20 +31,8 @@
   .text{
     font-size: 1.10em;
   }
-  .imageUnderlay{
-    width: 65%;
-    height: auto;
-    z-index: 0;
-    border-radius: 50%;
-  }
 }
 @media only screen and (min-width: 900px) {
-  .imageUnderlay{
-    width: 50%;
-    height: auto;
-    z-index: 0;
-    border-radius: 50%;
-  }
 }
 @media only screen and (min-width: 1024px) {
   .wrapper{
@@ -70,22 +46,8 @@
     flex: 1 1 calc(45% - 20px);
     margin: 0 25px;
   }
-  .imageUnderlay{
-    width: 100%;
-    height: auto;
-    z-index: 0;
-    border-radius: 50%;
-  }
 }
 @media only screen and (min-width: 1440px) {
-  .imageUnderlay{
-    max-width: 90%;
-    max-height: 550px;
-    z-index: 0;
-  }
-  .textOverlay{
-    text-shadow: 3px 3px 5px black; 
-  }
   .title{
     font-size: 3.0em;
   }
