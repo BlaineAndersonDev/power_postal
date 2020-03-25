@@ -7,8 +7,6 @@ import icon from '../images/icon_hours.svg';
 
 export default () => (
   <div className={Style.wrapper}>
-    <div id={Style.overlay} ></div>
-
     <h2 id={Style.title} content="Services">Our Services</h2>
 
     <div className={Style.section}>
