@@ -43,6 +43,10 @@
 .partnerLogo{
   width: 200px;
   height: 60px;
+  cursor: pointer;
+  transition: ease 0.5s;
+}.partnerLogo:hover, .partnerLogo:focus{
+  filter: brightness(150%);
 }
 .subtleButton{
   display: inline-block;
