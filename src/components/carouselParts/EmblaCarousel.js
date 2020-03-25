@@ -16,8 +16,8 @@ const EmblaCarouselComponent = ({ autoplay, delayLength, children }) => {
   const [nextBtnEnabled, setNextBtnEnabled] = useState(false);
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [scrollSnaps, setScrollSnaps] = useState([]);
-  const [delay, setDelay] = useState(delayLength);
-  const [isRunning, setIsRunning] = useState(autoplay);
+  const [delay] = useState(delayLength);
+  const [isRunning] = useState(autoplay);
 
   const scrollTo = useCallback(index => embla.scrollTo(index), [embla]);
   const scrollPrev = useCallback(() => embla.scrollPrev(), [embla]);
@@ -48,14 +48,6 @@ const EmblaCarouselComponent = ({ autoplay, delayLength, children }) => {
     return () => embla && embla.destroy();
   }, [embla]);
 
-  function handleIsRunningChange(e) {
-    setIsRunning(e.target.checked);
-  }
-
-  function handleDelayChange(e) {
-    setDelay(Number(e.target.value));
-  }
-
   return (
     <div className="content">
       <div className="embla">
@@ -63,15 +55,29 @@ const EmblaCarouselComponent = ({ autoplay, delayLength, children }) => {
           autoplay delayLength={80000}
           className="embla__viewport"
           emblaRef={setEmbla}
-          options={{ loop: false }}
+          options={{ 
+            align: 'center',
+            containerSelector: '*',
+            slidesToScroll: 1,
+            containScroll: false,
+            draggable: true,
+            dragFree: false,
+            loop: true,
+            speed: 10,
+            startIndex: 0,
+            selectedClass: 'is-selected',
+            draggableClass: 'is-draggable',
+            draggingClass: 'is-dragging',
+           }}
           htmlTagName="div"
         >
           <div className="embla__container">
-            {images.map((Child, index) => (
-              <div className="embla__slide" key={index}>
-                <img className="embla__slide__inner" src={Child}/>
-              </div>
-            ))}
+            {images.map((Child, index) => {
+              return (
+                <div className="embla__slide" key={index}>
+                  <img className="embla__slide__inner" src={Child} alt={Child} />
+                </div>);
+            })}
           </div>
         </EmblaCarouselReact>
         <div className="embla__dots">
