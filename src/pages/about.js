@@ -2,7 +2,9 @@
 import React from "react";
 // Component & Styling imports.
 import Style from "./about.module.css";
-import Carousel from "../components/carousel.js";
+// import Carousel from "../components/carousel.js";
+import EmblaCarousel from "../components/carouselParts/EmblaCarousel";
+
 
 export default () => (
   <div className={Style.wrapper}>
@@ -15,7 +17,7 @@ export default () => (
       <p className={Style.text}> Our fast FRIENDLY customer service will exceed your expectations!</p>
     </div>
     <div className={Style.section}>
-      <Carousel />
+      <EmblaCarousel />
     </div>
   </div>
 );

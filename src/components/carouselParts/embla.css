@@ -1,3 +1,8 @@
+.content {
+  background-color: whitesmoke;
+  width: 100%;
+}
+
 .embla {
   position: relative;
 }
@@ -17,13 +22,14 @@
 
 .embla__container {
   display: flex;
+  margin: auto 0;
   will-change: transform;
   margin-left: -1rem;
 }
 
 .embla__slide {
   flex: 0 0 auto;
-  width: 80%;
+  width: 100%;
   position: relative;
   padding-left: 1rem;
   counter-increment: embla;
@@ -33,9 +39,9 @@
   background-color: rgb(40, 44, 52);
   position: relative;
   border-radius: 0.5rem;
-  min-height: 200px;
-  padding-bottom: 46%;
   font-size: 5rem;
+  width: 80%;
+  height: auto;
 }
 
 .embla__slide__inner:before {
@@ -86,7 +92,6 @@
 }
 
 .embla__dots {
-  position: absolute;
   margin-top: 1rem;
   display: flex;
   list-style: none;

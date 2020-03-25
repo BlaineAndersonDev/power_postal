@@ -4,6 +4,12 @@ import useInterval from "./useInterval";
 import { DotButton, PrevButton, NextButton } from "./EmblaCarouselButtons";
 import "./embla.css";
 
+// Image imports.
+import pp1 from '../../images/pp_storeinterior.png';
+import pp2 from '../../images/pp_storefront.png';
+import pp3 from '../../images/pp_storesupplies.png';
+const images = [pp1, pp2, pp3];
+
 const EmblaCarouselComponent = ({ autoplay, delayLength, children }) => {
   const [embla, setEmbla] = useState(null);
   const [prevBtnEnabled, setPrevBtnEnabled] = useState(false);
@@ -51,18 +57,19 @@ const EmblaCarouselComponent = ({ autoplay, delayLength, children }) => {
   }
 
   return (
-    <div>
+    <div className="content">
       <div className="embla">
         <EmblaCarouselReact
+          autoplay delayLength={80000}
           className="embla__viewport"
           emblaRef={setEmbla}
           options={{ loop: false }}
           htmlTagName="div"
         >
           <div className="embla__container">
-            {children.map((Child, index) => (
+            {images.map((Child, index) => (
               <div className="embla__slide" key={index}>
-                <div className="embla__slide__inner">{Child}</div>
+                <img className="embla__slide__inner" src={Child}/>
               </div>
             ))}
           </div>
@@ -78,16 +85,6 @@ const EmblaCarouselComponent = ({ autoplay, delayLength, children }) => {
         </div>
         <PrevButton onClick={scrollPrev} enabled={prevBtnEnabled} />
         <NextButton onClick={scrollNext} enabled={nextBtnEnabled} />
-      </div>
-      <div className="autoplay">
-        <input
-          type="checkbox"
-          checked={isRunning}
-          onChange={handleIsRunningChange}
-        />{" "}
-        autoplay
-        <br />
-        delay: <input value={delay} onChange={handleDelayChange} />
       </div>
     </div>
   );
