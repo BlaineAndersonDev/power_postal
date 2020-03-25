@@ -2,8 +2,7 @@
 import React from "react";
 // Component & Styling imports.
 import Style from "./about.module.css";
-// Image imports.
-import PPExterior from '../images/pp_exterior.png';
+import Carousel from "../components/carousel.js";
 
 export default () => (
   <div className={Style.wrapper}>
@@ -16,10 +15,7 @@ export default () => (
       <p className={Style.text}> Our fast FRIENDLY customer service will exceed your expectations!</p>
     </div>
     <div className={Style.section}>
-      <img 
-        src={PPExterior}
-        className={Style.imageUnderlay}
-        alt="LandingImage" />
+      <Carousel />
     </div>
   </div>
 );
