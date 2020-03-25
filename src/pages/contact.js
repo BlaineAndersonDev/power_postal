@@ -4,9 +4,7 @@ import React from "react";
 import Style from "./contact.module.css";
 // Image imports.
 import iconHours from '../images/icon_hours.svg';
-import iconHolidays from '../images/icon_holidays.svg';
 import iconCarriers from '../images/icon_carriers.svg';
-import iconLocation from '../images/icon_location.svg';
 
 export default () => (
   <div className={Style.wrapper}>
