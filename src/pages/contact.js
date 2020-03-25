@@ -33,9 +33,9 @@ export default () => (
     <div className={Style.mapContainer}>
       <iframe 
         className={Style.map} 
-        frameborder="0"
+        frameBorder="0"
         src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJtwrHiiOlK4cRQVaDHsyWVFc&key=AIzaSyAGSdpZesorTJprfCK8IgLV-go95aXnaTU" 
-        allowfullscreen title="Map" />
+        allowFullScreen title="Map" />
     </div>
   </div>
 );

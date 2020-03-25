@@ -2,7 +2,6 @@
 import React from "react"
 // Component & Styling imports.
 import Style from "./footer.module.css"
-import Button from "../components/button.js"
 // Image imports.
 import PartnerEgghead from '../images/partner_egghead.png';
 import PartnerMilano from '../images/partner_milano.png';
