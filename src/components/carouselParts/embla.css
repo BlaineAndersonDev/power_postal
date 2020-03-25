@@ -70,7 +70,7 @@
 
 .embla__button:not(:disabled) {
   cursor: pointer;
-  fill: #1bcacd;
+  fill: lightgray;
 }
 
 .embla__button:disabled {
@@ -123,7 +123,7 @@
 }
 
 .embla__dot.is-selected:after {
-  background-color: #1bcacd;
+  background-color: lightgray;
   opacity: 1;
 }
 

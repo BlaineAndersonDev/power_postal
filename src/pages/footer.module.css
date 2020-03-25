@@ -6,7 +6,7 @@
   text-align: center;
   width: 100%;
   color: black;
-  background-color:lightgray;
+  background-color: whitesmoke;
 }
 .section{
   flex: 1;
@@ -26,24 +26,33 @@
   font-family: 'Caladea', serif;
   border-bottom: black 1px solid;
   margin: 0;
+  margin-bottom: 10px;
 }
 .text{
   width: 100%;
   font-size: 1.0em;
-  margin: 0;
-}
-.textSmall{
-  width: 100%;
-  font-size: 0.7em;
-  margin: 10px 0;
+  margin: 2px;
 }
 .bold{
   font-weight: bold;
 }
+#partnerTitle{
+  width: 100%;
+}
+#partnerBox{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+}
 .partnerLogo{
-  width: 200px;
-  height: 60px;
+  width: 80px;
+  height: 35px;
+  margin: 0 5px;
   cursor: pointer;
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 8px;
   transition: ease 0.5s;
 }.partnerLogo:hover, .partnerLogo:focus{
   filter: brightness(150%);
@@ -59,9 +68,30 @@
   cursor: pointer;
   text-decoration: none;
 }
+#bottomBox{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.textSmall{
+  width: 45%;
+  font-size: 0.7em;
+}
 @media only screen and (min-width: 425px) {
   .wrapper{
     padding-top: 20px;
+  }
+  #partnerBox{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .partnerLogo{
+    width: 100px;
+    height: 40px;
+    margin: 0 5px;
   }
 }
 @media only screen and (min-width: 700px) {
@@ -75,34 +105,37 @@
   #bottomBox{
     min-width: 100%;
     display: flex;
-    flex-flow: row wrap;
-    justify-content: baseline;
-    align-items: baseline;
-    text-align: center;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
   }
   .section{
     flex: 1 1 calc(45% - 20px);
     margin: 10px 15px;
   }
-  #bottomText{
-    flex: 1 1 calc(45% - 20px);
-  }
-  .textSmall{
-    min-width: 100%;
+  #partnerBox{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
   }
   .partnerLogo{
-    width: 250px;
-    height: 75px;
+    width: 110px;
+    height: 50px;
+    margin: 0 10px;
   }
 }
 @media only screen and (min-width: 1020px) {
-  .subsection{
-    margin: 10px 60px;
+  #addressBox{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
   }
   .partnerLogo{
-    width: 150px;
-    height: 75px;
-    margin: 5px 15px;
+    width: 110px;
+    height: 50px;
+    margin: 0 10px;
   }
   #locationBox{
     flex: 1;
@@ -113,17 +146,14 @@
 }
 @media only screen and (min-width: 1440px) {
   .partnerLogo{
-    width: 225px;
-    height: 100px;
-    margin: 5px 35px;
+    width: 170px;
+    height: 70px;
+    margin: 0 20px;
   }
   .title{
     font-size: 1.85em;
   }
   .text{
     font-size: 1.10em;
-  }
-  .textSmall{
-    font-size: 1.0em;
   }
 }

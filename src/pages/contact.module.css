@@ -5,7 +5,7 @@
   align-items: center;
   text-align: center;
   width: 100%;
-  background-color: lightgray;
+  background-color: #76E1ED;
 }
 .section{
   flex: 1;
@@ -20,6 +20,18 @@
   text-align: center;
   margin-bottom: 30px;
 }
+.columnedsection{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.columnedtext{
+  width: 45%;
+  font-size: 1.0em;
+  margin: 0;
+}
 .icon{
   width: 0px;
   height: 0px;
@@ -30,13 +42,16 @@
   font-family: 'Caladea', serif;
   border-bottom: black 1px solid;
   margin: 0;
+  margin-top: 10px;
+  margin-bottom: 15px;
 }
 .subtitle{
   width: 100%; /* Forces the title to have its own line in flexbox. */
   font-size: 1.25em;
   font-family: 'Caladea', serif;
   margin: 0;
-  margin-top: 5px;
+  margin-top: 15px;
+  margin-bottom: 8px;
 }
 .text{
   width: 100%;
@@ -85,8 +100,8 @@
     margin: 20px 2px 2px 2px;
   }
   .icon{
-    width: 100px;
-    height: 100px;
+    width: 60px;
+    height: 60px;
   }
   .title{
     font-size: 2.0em;

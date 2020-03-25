@@ -5,7 +5,7 @@
   align-items: center;
   text-align: center;
   width: 100%;
-  background-color: whitesmoke;
+  background-color: #76E1ED;
 }
 .section{
   flex: 1;
@@ -27,16 +27,17 @@
 }
 .title{
   width: 100%; /* Forces the title to have its own line in flexbox. */
-  font-size: 1.25em;
+  font-size: 1.5em;
   font-family: 'Caladea', serif;
   border-bottom: black 1px solid;
   margin: 0;
+  margin-bottom: 20px;
 }
 .text{
   width: 100%; /* Forces the title to have its own line in flexbox. */
   font-size: 1.10em;
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 .carrierLogo{
   width: 150px;
