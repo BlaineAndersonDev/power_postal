@@ -17,6 +17,7 @@ export default () => (
         <p className={Style.text}><span className={Style.bold}>Power Postal At Las Sendas</span></p>
         <p className={Style.text}>2824 N Power Rd</p>
         <p className={Style.text}>Suite 113 Mesa, AZ 85215</p>
+        <p className={Style.text}><span className={Style.bold}>Email: </span><a href="mailto:info@powerpostal.com" className={Style.subtleButton}>Info@PowerPostal.com</a></p>
         <p className={Style.text}><span className={Style.bold}>Phone: </span>480-654-2600</p>
         <p className={Style.text}><span className={Style.bold}>Fax: </span>480-654-2800</p>
         <Button text="Get Directions" link="https://www.google.com/maps/place/Power+Postal+at+Las+Sendas,+2824+N+Power+Rd+%23113,+Mesa,+AZ+85215/@33.466985,-111.685576,16z/data=!4m2!3m1!1s0x872ba5238ac70ab7:0x575496cc1e835641?hl=en-US&gl=US"/>

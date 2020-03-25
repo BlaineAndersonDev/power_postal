@@ -31,6 +31,13 @@
   border-bottom: black 1px solid;
   margin: 0;
 }
+.subtitle{
+  width: 100%; /* Forces the title to have its own line in flexbox. */
+  font-size: 1.25em;
+  font-family: 'Caladea', serif;
+  margin: 0;
+  margin-top: 5px;
+}
 .text{
   width: 100%;
   font-size: 1.0em;
