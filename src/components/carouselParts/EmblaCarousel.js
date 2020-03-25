@@ -8,7 +8,9 @@ import "./embla.css";
 import pp1 from '../../images/pp_storeinterior.png';
 import pp2 from '../../images/pp_storefront.png';
 import pp3 from '../../images/pp_storesupplies.png';
-const images = [pp1, pp2, pp3];
+import pp4 from '../../images/pp_exterior.png';
+import pp5 from '../../images/pp01.jpg';
+const images = [pp4, pp5, pp1, pp2, pp3];
 
 const EmblaCarouselComponent = ({ autoplay, delayLength, children }) => {
   const [embla, setEmbla] = useState(null);
