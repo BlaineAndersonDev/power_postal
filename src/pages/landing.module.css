@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&display=swap');
 
 .wrapper{
   display: flex;
@@ -10,8 +9,6 @@
   text-align: center;
   width: 100%;
   height: 400px;
-  /* background: url("../images/pp01.jpg") center/cover no-repeat scroll border-box border-box white; */
-  /* background: url("../images/postal_truck.jpg") center/cover no-repeat scroll border-box border-box white; */
   background: url("../images/test2.jpg") center/cover no-repeat scroll border-box border-box white;
 }
 /* Positioned 'absolute' to center the text on the image.  */
@@ -22,15 +19,12 @@
   position: absolute;
   color: #15C5D8;
 }
-/* font: font-style font-variant font-weight font-size/line-height font-family|caption|icon|menu|message-box|small-caption|status-bar|initial|inherit; */
   .title{
     /* font-family: 'Pacifico', cursive, 'Caladea', serif; */
-    /* font: italic 700 3.25em/10px 'Playfair Display', serif; */
     font: italic 700 3.25em/10px 'EB Garamond', serif;
     text-shadow: 1px 1px 0 rgb(255, 255, 255); 
   }
   .subtitle{
-    /* font: italic 500 1.85em/10px 'Playfair Display', serif; */
     font: italic 500 1.6em/30px 'EB Garamond', serif;
     text-shadow: 0.5px 0.5px 0 rgb(255, 255, 255); 
   }
