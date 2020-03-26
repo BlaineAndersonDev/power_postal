@@ -9,7 +9,7 @@
   text-align: center;
   width: 100%;
   height: 400px;
-  background: url("../images/test2.jpg") center/cover no-repeat scroll border-box border-box white;
+  background: url("../images/landing_small.jpg") center/cover no-repeat scroll border-box border-box white;
 }
 /* Positioned 'absolute' to center the text on the image.  */
 .textOverlay{
@@ -68,7 +68,8 @@
 @media only screen and (min-width: 700px) {
   .wrapper{
     height: 550px;
-  }
+    background: url("../images/landing_medium.jpg") center/cover no-repeat scroll border-box border-box white;
+}
   .title{
     font: italic 700 5em/10px 'EB Garamond', serif;
   }
@@ -96,5 +97,10 @@
   }
   .subtitle{
     font: italic 500 4.25em/30px 'EB Garamond', serif;
+  }
+}
+@media only screen and (min-width: 1921px) {
+  .wrapper{
+    background: url("../images/landing_large.jpg") center/cover no-repeat scroll border-box border-box white;
   }
 }
